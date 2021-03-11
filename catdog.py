@@ -4,7 +4,7 @@ from pathlib import Path
 import streamlit as st
 from urllib.request import urlretrieve
 
-url = 'http://dl.dropboxusercontent.com/s/fkdy4rbf8g8wm2s/best.pt?raw=1'
+url = 'http://dl.dropboxusercontent.com/s/ppuxevbt0d6jcav/cdog.pkl?raw=1'
 filename = 'cdog.pkl'
 urlretrieve(url,filename)
 st.markdown("CAT OR DOG")
