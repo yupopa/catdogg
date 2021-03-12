@@ -3,6 +3,7 @@ from fastai.vision.all import *
 from pathlib import Path
 import streamlit as st
 from urllib.request import urlretrieve
+import detect
 url = 'http://dl.dropboxusercontent.com/s/fkdy4rbf8g8wm2s/best.pt?raw=1'
 filename = 'best.pkl'
 urlretrieve(url,filename)
