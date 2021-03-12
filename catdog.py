@@ -3,13 +3,10 @@ from fastai.vision.all import *
 from pathlib import Path
 import streamlit as st
 from urllib.request import urlretrieve
-import detect
-
 url = 'http://dl.dropboxusercontent.com/s/fkdy4rbf8g8wm2s/best.pt?raw=1'
-filename = 'best.pt'
+filename = 'best.pkl'
 urlretrieve(url,filename)
-st.markdown("CAT OR DOG")
-
+st.markdown("HIGHLIGHTER OR PENCIL")
 
 class Predict:
     def __init__(self, filename):
@@ -39,6 +36,5 @@ class Predict:
             st.write(f'Click the button to classify') 
 
 if __name__=='__main__':
-    #python detect.py --weights runs/train/yolov5s_results3/weights/best.pt --img 416 --conf 0.4 --source /content/valid/images/BloodImage_00021_jpg.rf.685dcf4df8bece44445a4c841c9dca2d.jpg
-
+    predictor = Predict(filename)
     
