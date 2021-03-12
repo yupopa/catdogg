@@ -39,6 +39,6 @@ class Predict:
             st.write(f'Click the button to classify') 
 
 if __name__=='__main__':
-    python detect.py --weights runs/train/yolov5s_results3/weights/best.pt --img 416 --conf 0.4 --source /content/valid/images/BloodImage_00021_jpg.rf.685dcf4df8bece44445a4c841c9dca2d.jpg
+    #python detect.py --weights runs/train/yolov5s_results3/weights/best.pt --img 416 --conf 0.4 --source /content/valid/images/BloodImage_00021_jpg.rf.685dcf4df8bece44445a4c841c9dca2d.jpg
 
     
