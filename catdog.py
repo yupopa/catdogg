@@ -5,7 +5,7 @@ import streamlit as st
 from urllib.request import urlretrieve
 import detect
 url = 'http://dl.dropboxusercontent.com/s/fkdy4rbf8g8wm2s/best.pt?raw=1'
-filename = 'best.pkl'
+filename = 'best.pt'
 urlretrieve(url,filename)
 st.markdown("HIGHLIGHTER OR PENCIL")
 
