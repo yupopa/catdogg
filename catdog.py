@@ -9,6 +9,14 @@ filename = 'best.pt'
 urlretrieve(url,filename)
 st.markdown("HIGHLIGHTER OR PENCIL")
 
+
+path = Path("/best.pt")
+
+
+torch.save(filename, PATH)
+model = torch.load(PATH)
+model.eval()
+
 class Predict:
     def __init__(self, filename):
         self.learn_inference = load_learner(filename)
