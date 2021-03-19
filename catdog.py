@@ -10,7 +10,6 @@ urlretrieve(url,filename)
 st.markdown("HIGHLIGHTER OR PENCIL")
 
 
-path = Path("/best.pt")
 
 
 torch.save(filename, PATH)
